@@ -1,0 +1,51 @@
+@import '../index.scss';
+
+.navigation-bar {
+  padding: 0.5rem 1rem;
+  background-color: $mainBlack;
+  display: grid;
+  grid-template-columns: auto 2fr auto;
+  align-items: center;
+}
+
+.navigation-bar .brand{
+  width: 10rem;
+}
+
+.navigation-bar .links {
+  text-transform: capitalize;
+  text-align: center;
+  list-style-type: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.2rem;
+  color: $mainGreen;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  align-items: center;
+}
+
+.navigation-bar .link{
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  &:hover {
+    color: $mainGreen;
+  } 
+}
+
+.login {
+  display: grid;
+  grid-template-columns: auto;
+  color: white;
+}
+
+.login .link {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.login-icon {
+  width: 2rem;
+  min-width: 1rem;
+}
