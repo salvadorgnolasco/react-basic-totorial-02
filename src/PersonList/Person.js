@@ -2,24 +2,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Person({ img, name, age, info }) {
+export default function Person({person: { img, name, age, info }}) {
   return (
     <section>
       <img src={img} alt="Random" />
       <h2>{name}</h2>
       <h3>age: {age}</h3>
-      <p>{info}</p>
+      <p>{info || "Undefined role"}</p>
     </section>
   )
 }
 
 Person.propTypes = {
-  info: PropTypes.string.isRequired,
-  age: PropTypes.number
+  person: PropTypes.shape({
+    // info: PropTypes.string.isRequired,
+    info: PropTypes.string,
+    age: PropTypes.number,
+    img: PropTypes.string
+  }),
 };
-
-Person.defaultProps = {
-  info: "Undefined role"
-}
 
 

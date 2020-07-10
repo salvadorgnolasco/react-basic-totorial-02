@@ -36,11 +36,9 @@ export default class PersonList extends Component {
   render() {
     return (
       <div>
-        {this.state.people.map( (person) => <Person key={person.id}
-          img={person.img}
-          name={person.name}
-          age={person.age}
-          info={person.info}
+        {this.state.people.map( (person) => <Person 
+          key={person.id}
+          person={person}
         >
         </Person>)}
       </div>
