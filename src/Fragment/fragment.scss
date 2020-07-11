@@ -1,0 +1,24 @@
+.counter {
+  width: 70vw;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  margin: 3rem auto 0;
+  align-items: center;
+  // background-color: teal;
+}
+
+.counter button {
+  height: 3rem;
+  width: 65%;
+  margin: 0 auto;
+  text-transform: capitalize;
+}
+
+.counter span{
+  margin: 0 0.5rem;
+  font-weight: bolder;
+  font-size: 2rem;
+  text-align: center;
+  display: block;
+  padding: 1rem 0;
+}
